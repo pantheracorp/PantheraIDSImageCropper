@@ -1,4 +1,5 @@
-$(document).ready(function(){
+// Called from renderValue in imageCropper.js.
+window.idsCropperHelperInit = function(){
 
   jQuery.fn.extend({
     renameAttr: function( name, newName, removeData ) {
@@ -99,4 +100,4 @@ $('#btn-drag').attr('data-option','move');
 $( "#aspect4" ).trigger( "click" );
 
 document.getElementById('download').setAttribute('download','cropped.jpg');
-});
+};
