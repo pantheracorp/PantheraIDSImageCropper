@@ -1,4 +1,5 @@
-$(function () {
+// Called from renderValue in imageCropper.js.
+window.idsCropperInit = function () {
   'use strict';
 
   var console = window.console || { log: function () {} };
@@ -232,7 +233,7 @@ $(function () {
   });
 
   // Keyboard
-  $(document.body).on('keydown', function (e) {
+  $(document.body).off('keydown.idsCropper').on('keydown.idsCropper', function (e) {
     if (e.target !== this || !$image.data('cropper') || this.scrollTop > 300) {
       return;
     }
@@ -311,6 +312,4 @@ $(function () {
 });
 
    
-});
-
-
+};

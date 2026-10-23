@@ -1,6 +1,8 @@
+# Bump a dependency's version whenever its files change; the version is part
+# of the URL, so browsers otherwise keep running the cached copy.
 dependencies:
 - name: cropper_main
-  version: 1.7.0
+  version: 1.7.0.1
   src: htmlwidgets
   script: ./lib/js/cropper_main.js
   stylesheet: ./lib/css/all.css
@@ -14,7 +16,7 @@ dependencies:
   src: htmlwidgets
   script: ./lib/js/jquery-cropper.js
 - name: helper
-  version: 0.0.1
+  version: 0.0.2
   src: htmlwidgets
   script: ./lib/js/helper.js
 - name: jquery
